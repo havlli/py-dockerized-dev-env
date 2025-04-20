@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"  # Application port
+      - "5678:5678"  # Debug port
+    volumes:
+      - .:/app
+    environment:
+      - ENVIRONMENT=development
+      - PYTHONUNBUFFERED=1
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    
