@@ -17,12 +17,12 @@ This is a template repository for setting up a Python development environment wi
 .
 ├── src/                    # Source code directory
 ├── tests/                  # Test files
-├── .vscode/               # VS Code configuration
-├── .gitignore             # Git ignore rules
-├── Dockerfile             # Development environment configuration
-├── docker-compose.yml     # Docker services configuration
-├── requirements.txt       # Python dependencies
-└── README.md             # Project documentation
+├── .vscode/                # VS Code configuration
+├── .gitignore              # Git ignore rules
+├── Dockerfile              # Development environment configuration
+├── docker-compose.yml      # Docker services configuration
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 ```
 
 ## Getting Started
